@@ -8,7 +8,7 @@ const options = {
   params: {
     part: 'snippet',
     channelId: 'UC_x5XG1OV2P6uZZ5FSM9Ttw',
-    maxResults: '5',
+    maxResults: '4',
   },
   headers: {
     'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
