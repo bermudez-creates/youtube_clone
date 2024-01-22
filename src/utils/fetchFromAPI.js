@@ -4,11 +4,11 @@ const BASE_URL = 'https://youtube-v311.p.rapidapi.com';
 
 const options = {
   url: BASE_URL,
-  params: { maxResults: '50' },
+
   params: {
     part: 'snippet',
     channelId: 'UC_x5XG1OV2P6uZZ5FSM9Ttw',
-    maxResults: '4',
+    maxResults: '3',
   },
   headers: {
     'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
