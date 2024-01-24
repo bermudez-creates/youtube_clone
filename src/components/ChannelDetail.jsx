@@ -11,7 +11,6 @@ const ChannelDetail = () => {
   useEffect(() => {
     fetchFromAPI(`channels?part=snippet&id=${id}`).then((data) => {
       setChannelDetail(data);
-      console.log(data);
     });
 
     fetchFromAPI(`search?channelId=${id}&part=snippet&order=date`).then(
@@ -35,7 +34,7 @@ const ChannelDetail = () => {
         <ChannelCard channelDetail={channelDetail} marginTop="-110px" />
       </Box>
       <Box display="flex" p="2">
-        <Box sx={{ mr: { sm: '100px' } }} hoverOver="pointer" />
+        <Box sx={{ mr: { sm: '100px' } }} />
         <Videos videos={videos} />
       </Box>
     </Box>
